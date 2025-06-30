@@ -1,0 +1,28 @@
+docker container run --publish 80:80 nginx
+
+
+docker container run --publish 80:80 --detached nginx
+
+
+docker container ls
+
+
+docker container stop ID
+
+
+docker container ls -a
+
+
+docker container run --publish 80:80 --detached --name NAME nginx
+
+
+docker container logs NAME
+
+
+docker container top NAME
+
+
+docker container rm ID_1 ID_2 ...
+
+
+docker container rm -f ID_1 ID_2 ...

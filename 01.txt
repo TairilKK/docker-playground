@@ -1,28 +1,50 @@
 docker container run --publish 80:80 nginx
 
-
 docker container run --publish 80:80 --detached nginx
-
-
-docker container ls
-
-
-docker container stop ID
-
-
-docker container ls -a
-
 
 docker container run --publish 80:80 --detached --name NAME nginx
 
 
-docker container logs NAME
+docker container stop ID
 
+docker container ls
 
-docker container top NAME
+docker container ls -a
 
 
 docker container rm ID_1 ID_2 ...
 
-
 docker container rm -f ID_1 ID_2 ...
+
+
+docker container logs NAME
+
+docker container top NAME
+
+docker container inspect NAME
+
+docker container stats
+
+
+docker container run -it --name NAME IMAGE bash
+
+docker container start -ai NAME
+
+docker container exec -it bash
+
+
+docker container inspect --format "{{ .NetworkSettings.IPAddress }}" NAME
+
+docker container port NAME
+
+
+docker network inspect bridge
+
+docker netwok create NAME
+
+docker container run -d --name new_nginx --network my_app_net nginx:alpine
+
+docker network connect my_app_net nginx
+
+docker network disconnect my_app_net nginx
+

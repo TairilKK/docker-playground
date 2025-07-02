@@ -57,3 +57,5 @@ docker inspect image IMG_NAME
 
 docker tag IMG_TAG NEW_TAG
 
+
+docker image build -t TAG DIR

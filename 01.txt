@@ -48,3 +48,12 @@ docker network connect my_app_net nginx
 
 docker network disconnect my_app_net nginx
 
+
+docker image ls
+
+docker history IMG_NAME
+
+docker inspect image IMG_NAME
+
+docker tag IMG_TAG NEW_TAG
+

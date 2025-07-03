@@ -59,3 +59,9 @@ docker tag IMG_TAG NEW_TAG
 
 
 docker image build -t TAG DIR
+
+
+docker volume ls
+
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql
+
